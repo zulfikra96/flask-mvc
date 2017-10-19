@@ -25,6 +25,26 @@
                 </div>
             </div>
         </div>
+
+        <!--  -->
+        <div class="col-md-12">
+            <table class="table table-default">
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Username</th>
+                    <th>password</th>
+                </tr>
+                {%for row in users%}
+                <tr>
+                    <td>{{row.id}}</td>
+                    <td>{{row.name}}</td>
+                    <td>{{row.username}}</td>
+                    <td>{{row.password}}</td>
+                </tr>
+                {%endfor%}
+            </table>
+        </div>
     </div>
 </div>
 {%endblock%}

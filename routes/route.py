@@ -13,4 +13,4 @@ def index():
 @route.route('/create')
 def create():
     user = Users()
-    return str(user.query.first().id)
+    return str(user.query.first().names)
