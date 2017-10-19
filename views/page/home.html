@@ -1,0 +1,30 @@
+{%extends "index.html"%}
+{%block body%}
+<div class="container" style="margin-top:200px;">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form action="{{url_for('.create')}}">
+                        <div class="form-group">
+                            <label for="">Nama</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">username</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">password</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-block" value="kirim">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
